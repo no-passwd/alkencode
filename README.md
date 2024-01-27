@@ -1,11 +1,15 @@
 # alien encode(alkencode)
 
+Language: [中文](#) | [English](https://github-com.translate.goog/no-passwd/alkencode?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)
+
 Alien Encode(外星人编码)，可以将 UTF-8 字符编码为像数据损坏后的格式，比如：
 
 > ▞▙▞▚▘▌▚▖▞▖▞▚▘▄▚▙▄▘▘▚▄▚▗█
 
-我觉得这个方式很有趣
 
+![images](https://github.com/no-passwd/alkencode/assets/143941593/478db169-7853-4474-8e74-594c7c5e8f03)
+
+我觉得这个方式很有趣
 
 ---
 
@@ -93,29 +97,37 @@ I am lost▞▄▘▚▄▀▄▟I'm really really▘▙▘▚▘▄▚▗▄▝
 ---
 
 
+<br>
+
 ## Notice
 
 抗干扰性目前仅对**英文**和**gb2312**(中文)有效（这是因为正则仅匹配了**英文**或者**gb2312**），插入其他语言可能出现未知错误。
 
 ---
 
+<br>
 
 ## Contributing
 
 欢迎对 Alien Encode 的贡献，目前需要以下方面：
-1.优化alkencode.js的正则匹配，使其匹配除了**英文**或者**gb2312**的其他编码。
-2.翻译index.html为其他语言（目前只支持中文/英文）。
 
+1.优化alkencode.js的正则匹配，使其匹配除了**英文**或者**gb2312**的其他编码。
+
+2.翻译index.html为其他语言（目前只支持中文/英文）。
 
 ---
 
-## 许可证
+<br>
+
+## LICENSE
 
 Alien Encode 使用 [MIT 许可证](LICENSE) 进行许可。您可以根据许可证的条款自由使用、修改和分发该程序。
 
 ---
 
-## 感谢
+<br>
+
+## Thanks
 
 这个项目的灵感来自这个网站：
 
