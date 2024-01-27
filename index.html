@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>alkencode</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+			hight: 100px;
+            font-size: 16px;
+			padding: 10px;
+			width: 100%;
+			max-width: 1400px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+		
+		.content{width:1000px;max-width:100%;margin:0 auto;}
+
+#header{height:61px;line-height:60px;z-index:10;}
+#header>.content{width:100%;padding:0 25px;box-sizing:border-box;}
+#header_logo{ font-size:20px; text-decoration:none; margin-top:-2px; display:inline-block; }
+#header_logo>img{ height:28px;   vertical-align: middle; margin-top: -4px;}
+#header_logo>span{vertical-align: middle; font-weight: 700;color:#39ba36;margin-left: 6px;text-transform: uppercase; font-family: sans-serif; position: relative; top: 4px; font-size: 17px;}
+#header nav{float:right}
+#header nav>a{margin:0 10px;display:inline-block;vertical-align:middle;text-decoration:none;text-transform:capitalize;font-size:14px;}
+#header nav>a.selected{color:#ccc;}
+
+    </style>
+	   <script type="text/javascript" src="alkencode.js"></script>
+    <script>
+	var userlang=navigator.language;
+        function encrypt() {
+            let input = document.getElementById("inputText");
+            let output = document.getElementById("outputText");
+			output.value=kencode(input.value);
+			/**Encode this*/
+			}
+
+        function decrypt() {
+            let input = document.getElementById("inputText");
+            let output = document.getElementById("outputText");
+			input.value=dekencode(output.value);
+			/**Decode this*/
+			}
+    </script>
+</head>
+<body>
+<header id="header"><div class="content">
+	<nav> <a href="https://github.com/no-passwd/alkencode" target="_blank">star on github</a></nav>
+</div></header>
+    <h2> <script>if (userlang.includes("zh")) {document.write("外星人编码:加密/解密");}else {document.write("Alien Encode:encrypt/decrypt");} </script></h2>
+    <label for="inputText"><script>if (userlang.includes("zh")) {document.write("明文：");}else {document.write("plaintext：");}</script></label>
+    <input type="text" id="inputText" name="inputText"><br><br>
+    <label for="outputText"><script>if (userlang.includes("zh")) {document.write("密文：");}else {document.write("crypttext：");} </script></label>
+    <input type="text" id="outputText" name="outputText"><br><br>
+    <button onclick="encrypt()"><script>if (userlang.includes("zh")) {document.write("加密");}else {document.write("encrypt");} </script></button>
+    <button onclick="decrypt()"><script>if (userlang.includes("zh")) {document.write("解密");}else{document.write("decrypt");}</script></button>
+	 <script> if (userlang.includes("zh")) {document.title ="外星人编码:加密/解密";} else {document.title ="Alien Encode:encrypt/decrypt";}
+	 </script>
+</body>
+</html>
