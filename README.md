@@ -25,7 +25,12 @@ Alien Encode(外星人编码)，可以将 UTF-8 字符编码为像数据损坏�
     像这样：
 </summary>
 
-[在线试试](https://no-passwd.github.io/alkencode/)
+~~[在线试试](https://no-passwd.github.io/alkencode/)~~
+
+---
+
+> 新的，宽文本框由kikuri提供思路
+[在线试试](https://no-passwd.github.io/alkencode/maxlist.html)
 
 #### 英文插入
    
@@ -89,7 +94,7 @@ I am lost▞▄▘▚▄▀▄▟I'm really really▘▙▘▚▘▄▚▗▄▝
 ```js
 <script
   src="https://cdn.jsdelivr.net/gh/no-passwd/alkencode@main/alkencode.js"
-  integrity="sha256-EBG0TL6HlUIaezcDOLjeJ0MvIUE7eZb+JqZeMlHPasg="
+  integrity="sha256-BVPLQpbDtyC/rwQy2gSo1ZtttdihTgVXYcTTPWGEDic="
   crossorigin="anonymous"></script>
 ```
 
@@ -101,7 +106,7 @@ I am lost▞▄▘▚▄▀▄▟I'm really really▘▙▘▚▘▄▚▗▄▝
 
 ## Notice
 
-抗干扰性目前仅对**英文**和**gb2312**(中文)有效（这是因为正则仅匹配了**英文**或者**gb2312**），插入其他语言可能出现未知错误。
+抗干扰性使用正则匹配过滤，在正则之外可能出现未知错误。
 
 ---
 
@@ -111,7 +116,7 @@ I am lost▞▄▘▚▄▀▄▟I'm really really▘▙▘▚▘▄▚▗▄▝
 
 欢迎对 Alien Encode 的贡献，目前需要以下方面：
 
-1.优化alkencode.js的正则匹配，使其匹配除了**英文**或者**gb2312**的其他编码。
+~~1.优化alkencode.js的正则匹配，使其匹配除了**英文**或者**gb2312**的其他编码。~~，已解决，感谢ymh1147提供思路。
 
 2.翻译index.html为其他语言（目前只支持中文/英文）。
 
